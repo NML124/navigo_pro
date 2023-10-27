@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controller Arduino</title>
+    <link rel="shortcut icon" href="/assets/Images/Logo_Team3.png" type="image-icon">
+    <link rel="stylesheet" href="/captain/ship_controller/CSS/main.css">
+</head>
+
+<body>
+
+    <section class="control">
+        <div class="image-top">
+            <img src="/captain/ship_controller/assets/Images/Logo_Team3_3.png" alt="">
+        </div>
+
+        <div class="all-sensors">
+            <!--/assets/Images/Logo_Team3_3.png
+            <div class="controlForm">
+                <div class="sensor-name">
+                    <h3>Magnetometer</h3>
+                </div>
+                <div class="contenu-sensor">
+                    <div class="sensor-image">
+                        <img src="/assets/Images/Magneto.png" alt="">
+                    </div>
+                    <div class="info-sensor">
+                        <div class="info-angle">
+                            <h4>X-axis :</h4>
+                            <div class="angle-data">
+                                <p>000000</p>
+                            </div>
+                            <p class="unite">µT</p>
+                        </div>
+                        <div class="info-angle">
+                            <h4>Y-axis :</h4>
+                            <div class="angle-data">
+                                <p>000000</p>
+                            </div>
+                            <p class="unite">µT</p>
+                        </div>
+                        <div class="info-angle">
+                            <h4>Z-axis :</h4>
+                            <div class="angle-data">
+                                <p>000000</p>
+                            </div>
+                            <p class="unite">µT</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="controlForm">
+                <div class="sensor-name">
+                    <h3>Gyroscope</h3>
+                </div>
+                <div class="contenu-sensor">
+                    <div class="sensor-image">
+                        <img src="/captain/ship_controller/assets/Images/Gyroscope.png" alt="">
+                    </div>
+                    <div class="info-sensor">
+                        <div class="info-angle">
+                            <h4>X-axis :</h4>
+                            <div class="angle-data">
+                                <p id="gyx">000000</p>
+                            </div>
+                            <p class="unite">deg/s</p>
+                        </div>
+                        <div class="info-angle">
+                            <h4>Y-axis :</h4>
+                            <div class="angle-data">
+                                <p id="gyy">000000</p>
+                            </div>
+                            <p class="unite">deg/s</p>
+                        </div>
+                        <div class="info-angle">
+                            <h4>Z-axis :</h4>
+                            <div class="angle-data">
+                                <p id="gyz">000000</p>
+                            </div>
+                            <p class="unite">deg/s</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="controlForm">
+                <div class="sensor-name">
+                    <h3>Accelerometer</h3>
+                </div>
+                <div class="contenu-sensor">
+                    <div class="sensor-image">
+                        <img src="/captain/ship_controller/assets/Images/Accelero.png" alt="">
+                    </div>
+                    <div class="info-sensor">
+                        <div class="info-angle">
+                            <h4>X-axis :</h4>
+                            <div class="angle-data">
+                                <p id="acx">000000</p>
+                            </div>
+                            <p class="unite">m/s²</p>
+                        </div>
+                        <div class="info-angle">
+                            <h4>Y-axis :</h4>
+                            <div class="angle-data">
+                                <p id="acy">000000</p>
+                            </div>
+                            <p class="unite">m/s²</p>
+                        </div>
+                        <div class="info-angle">
+                            <h4>Z-axis :</h4>
+                            <div class="angle-data">
+                                <p id="acz">000000</p>
+                            </div>
+                            <p class="unite">m/s²</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="controlForm">
+                <div class="sensor-name">
+                    <h3>Location</h3>
+                </div>
+                <div class="contenu-sensor location">
+                    <div class="sensor-image">
+                        <img src="/captain/ship_controller/assets/Images/Location.png" alt="">
+                    </div>
+                    <div class="info-sensor">
+                        <div class="info-angle">
+                            <h4>Longitude :</h4>
+                            <div class="angle-data">
+                                <p id="longi">000000</p>
+                            </div>
+                        </div>
+                        <div class="info-angle">
+                            <h4>Latitude <span>--</span>:</h4>
+                            <div class="angle-data">
+                                <p id="lati">000000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="controlForm">
+                <div class="sensor-name">
+                    <h3>Ultrason</h3>
+                </div>
+                <div class="contenu-sensor">
+                    <div class="sensor-image">
+                        <img src="/captain/ship_controller/assets/Images/Ultrason.png" alt="">
+                    </div>
+                    <div class="info-sensor">
+                        <div class="info-angle">
+                            <h4>Object :</h4>
+                            <div class="angle-data">
+                                <p id="ult">000000</p>
+                            </div>
+                            <p class="unite">m</p>
+                        </div>
+                        <!--
+                        <div class="info-angle">
+                            <p class="unite">0</p>
+                            <div class="angle-data">
+                                <p>000000</p>
+                            </div>
+                            <p class="unite">100</p>
+                        </div>
+                        <div class="info-angle">
+                            <h4>Z-axis :</h4>
+                            <div class="angle-data">
+                                <p>000000</p>
+                            </div>
+                            <p class="unite">µT</p>
+                        </div>
+                    -->
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class='radar'>
+            <div class='sweep'></div>
+        </div>
+
+        <div class="Panel-control">
+            <h2>Control Panel</h2>
+            <div class="mode-control">
+                <h3 id="btnmode">OFF</h3>
+            </div>
+            <div class="motor-control" id="control">
+                <div class="title-control">
+                    <h3>Speed controller :</h3>
+                    <p id="motor-speed">0</p>
+                </div>
+                <div class="Range-slider">
+                    <p>0</p>
+                    <input type="range" min="0" max="255" value="0" class="slider" id="myRange">
+                    <p>255</p>
+                </div>
+
+            </div>
+            <div class="joystick-control" id="control">
+                <div class="title-control">
+                    <h3>Joystick controller :</h3>
+                </div>
+                <div class="display-joy">
+                    <!-- <h4>JoyStick =</h4> -->
+                    <div class="angle-joy">
+                        <h5>X :</h5>
+                        <p id="x1">000000</p>
+                        <h5>Y :</h5>
+                        <p id="y1">000000</p>
+                        <h5>α Deg :</h5>
+                        <p id="angle1">000000</p>
+                    </div>
+                </div>
+                <!--
+                <div class="display-joy">
+                    <h4>JoyStick 2 =</h4>
+                    <div class="angle-joy">
+                        <h5>X :</h5>
+                        <p id="x2">000000</p>
+                        <h5>Y :</h5>
+                        <p id="y2">000000</p>
+                        <h5>Angle :</h5>
+                        <p id="angle2">000000</p>
+                    </div>
+                </div>
+                -->
+                <div class="TheJoysticks">
+                    <div class="joystick1" id="joy">
+                        <img src="/captain/ship_controller/assets/Images/Joystick/joystick-base.png" alt="">
+                        <div class="stick" id="stick1">
+                            <img src="/captain/ship_controller/assets/Images/Joystick/joystick-red.png" alt="">
+                        </div>
+                    </div>
+                    <!-- <button class="bouton" id="lock-button">Fix</button> -->
+                    <!-- Rounded switch -->
+                    <label class="switch">
+                        <input type="checkbox" id="mySwitch">
+                        <span class="slider-round"></span>
+                    </label>
+                    <div class="joystick2" id="joy">
+                        <img src="/captain/ship_controller/assets/Images/Joystick/joystick-base.png" alt="">
+                        <div class="stick" id="stick2">
+                            <img src="/captain/ship_controller/assets/Images/Joystick/joystick-blue.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="direction-control" id="control">
+                <div class="title-control">
+                    <h3>Drop controller :</h3>
+                    <p id="position-control">stop</p>
+                    <p id="position-control2">stop</p>
+                </div>
+                <div class="up-line ForLine">
+                    <button class="btn btn-up" id="btn-up"><img
+                            src="/captain/ship_controller/assets/Images/icons8-flèche-haut.gif" alt=""></button>
+                </div>
+                <div class="down-line ForLine">
+                    <button class="btn btn-left" id="btn-left"><img
+                            src="/captain/ship_controller/assets/Images/icons8-flèche-gauche.gif" alt=""></button>
+                    <button class="btn btn-down" id="btn-down"><img
+                            src="/captain/ship_controller/assets/Images/icons8-flèche-bas.gif" alt=""></button>
+                    <button class="btn btn-right" id="btn-right"><img
+                            src="/captain/ship_controller/assets/Images/icons8-flèche-droite.gif" alt=""></button>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="/captain/ship_controller/JavaScript/script-joystick.js"></script>
+    <script src="/captain/ship_controller/JavaScript/boutons.js"></script>
+    <script src="/captain/ship_controller/JavaScript/script.js"></script>
+    <script src="/captain/ship_controller/JavaScript/motor.js"></script>
+    <script src="/captain/ship_controller/JavaScript/ultrason.js"></script>
+
+
+</body>
+
+</html>

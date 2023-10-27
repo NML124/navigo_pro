@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- import style file -->
+    <link rel="stylesheet" href="/style.css" media="screen" type="text/css" />
+    <link rel="shortcut icon" type="image/png" href="/img/Flaticon.png" />
+    <title>Sign Up</title>
+</head>
+
+<body id="BODY">
+    <div id="container">
+        <!-- registration area -->
+
+        <form action="registration_for_captain.php" method="POST">
+            <h1>Sign up</h1>
+
+            <fieldset id="part_of_the_ship_respondent">
+                <legend>Information from the person in charge</legend>
+                <!-- information relative au propriéter du bateau -->
+                <label><b>Name</b></label>
+                <input type="text" placeholder="Enter your name" name="name" required>
+
+                <label><b>First name</b></label>
+                <input type="text" placeholder="Enter your First name" name="first_name" required>
+
+                <label><b>User name</b></label>
+                <input type="text" placeholder="Enter the user name" name="user_name" required>
+
+                <label><b>Date</b></label><br>
+                <input type="date" placeholder="Enter your birthday" name="date" required><br>
+
+                <label><b>Place of birth</b></label>
+                <input type="text" placeholder="Enter your place of birth" name="place_birth" required>
+
+                <label><b>Nationality</b></label>
+                <input type="text" placeholder="Enter your nationality" name="nationality" required>
+
+                <label><b>Address</b></label>
+                <input type="text" placeholder="Enter your complete address" name="address" required>
+
+                <label><b>Phone number</b></label>
+                <input type="int" placeholder="Enter your phone number" name="phone_number" required>
+
+                <label><b>Email</b></label><br>
+                <input type="email" placeholder="Enter your email address" name="email" required><br>
+
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter the password" name="password" required>
+                <button type="button" id="next">Suivant</button>
+
+            </fieldset>
+            <fieldset id="part_of_boat" hidden>
+                <legend>Information about the boat</legend>
+                <!-- Ici les champs relatifs au bateau -->
+                <label><b>Name of boat</b></label>
+                <input type="text" placeholder="Enter your name of boat" name="boat_name" required>
+
+                <label><b>Overall length of the boat</b></label>
+                <input type="text" placeholder="Enter the overall length of your boat" name="boat_length" required>
+
+                <label><b>Type of your boat</b></label><br>
+                <select name="boat_type" id="boat_type">
+                    <option value="1">Fishing boat</option>
+                    <option value="2">Cargo boat</option>
+                    <option value="3">Pleasure boat</option>
+                </select><br>
+
+                <label><b>Power of the engine</b></label>
+                <input type="int" placeholder="Enter the power of your main engine " name="engine_power" required>
+
+                <button type="button" id="prev">Précédent</button>
+                <input type="submit" id='submit' value='SUBMIT'>
+            </fieldset>
+            <a href="/authentification/login.php" id="link">login</a>
+
+        </form>
+        <script>
+            // On récupère les éléments du DOM
+            let part_of_the_ship_respondent = document.getElementById("part_of_the_ship_respondent");
+            let part_of_boat = document.getElementById("part_of_boat");
+            let next = document.getElementById("next");
+            let prev = document.getElementById("prev");
+
+            // On ajoute des écouteurs d'événements sur les boutons
+            next.addEventListener("click", function () {
+                // On masque la partie personne et on affiche la partie bateau
+                part_of_the_ship_respondent.hidden = true;
+                part_of_boat.hidden = false;
+            });
+
+            prev.addEventListener("click", function () {
+                // On masque la partie bateau et on affiche la partie personne
+                part_of_boat.hidden = true;
+                part_of_the_ship_respondent.hidden = false;
+            });
+        </script>
+    </div>
+</body>
+
+</html>

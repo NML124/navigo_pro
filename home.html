@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home_style.css" media="screen" type="text/css" />
+    <link rel="shortcut icon" type="image/png" href="/img/Flaticon.png" />
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <h1 href="home.html" target="_blank"><img src="/img/Navigo_pro.png" alt="Navigo Pro" width="300"></h1>
+        <nav>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="#operator">Operators</a></li>
+                <li><a href="#captain">Captains</a></li>
+                <li><a href="#port_agents">Port agents</a></li>
+                <li><a href="/authentification/login.php">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2 class="Welcome">Welcome to Navigo Pro</h2>
+            <p>Whether you're an operator, a captain or a port agent, we have everything you need
+                to manage your ship and cargo safely and efficiently.</p>
+            <a href="/home_page.php" class="cta">Register now</a>
+        </section>
+        <section class="services">
+            <h2>Our services</h2>
+            <div id="contain">
+                <ul>
+                    <li>
+                        <img src="/img/Operators.png" alt="Operators">
+                        <h3>Operators</h3>
+                        <p>
+                            Get an overview of all shipping traffic in real time, enabling you to
+                            make decisions for your business.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="/img/Captain.png" alt="Captains">
+                        <h3>Captains</h3>
+                        <p>
+                            Control your boat remotely with our advanced navigation system, saving
+                            you time and money saving you time and money, while increasing your crew's safety. safety of
+                            your crew.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="/img/Agent_Port.png" alt="Port agents">
+                        <h3>Port agents</h3>
+                        <p>Register every item passing through the port with ease and accuracy, ensuring
+                            ensuring nothing is lost or mislabeled.</p>
+                    </li>
+                </ul>
+
+                <!-- For operator -->
+                <section id="operator">
+                    <h2>The Navigo Pro operators</h2>
+                    <div class="container">
+                        <div class="illustration_operator">
+                            <img src="/img/maritime_traffic_surveillance.jpg"
+                                alt="Illustration of maritime traffic surveillance" height="500px" style="width: 100%;">
+                        </div>
+                        <div class="content_operator">
+                            <p>Operators, also known as "Vessel Traffic Controllers", are people who
+                                represent
+                                the port and manage marine traffic. They use a chart to monitor the
+                                movement
+                                of ships in the port, and see what goods are brought into the port. They
+                                also use charts to keep track of all the elements in the port, such as the agents
+                                engaged
+                                engaged and which ships are active.</p>
+                            <p>Operators are highly qualified professionals who work closely with
+                                with ship captains and port agents to ensure that maritime traffic flows safely and
+                                efficiently.</p> <!-- Correction: fermer la balise p -->
+                            <a href="/operator/registration/sign_in_operator.html" class="become-btn">Become an
+                                operator</a>
+                        </div> <!-- Correction: fermer la balise div -->
+                    </div>
+                </section>
+                <!-- For Captain -->
+                <section id="captain">
+                    <h2>The Captains</h2>
+                    <div class="container">
+                        <div class="content_captain">
+                            <p>The captains or shipmasters are the persons responsible for navigation and safety on the
+                                safety
+                                a vessel. At Navigo Pro, we provide captains with the tools they need to
+                                necessary to
+                                control their vessel remotely and have real-time access to information from
+                                all
+                                sensors on board.</p>
+                            <p>Our advanced surveillance systems allow captains to monitor
+                                the location of
+                                weather, speed and other important parameters in real time. Captains
+                                captains can also view images from the ship's surveillance cameras
+                                and
+                                receive alerts in the event of danger or emergency.</p>
+                            <p>With Navigo Pro, captains have a complete overview of their ship and can
+                                make
+                                decisions to maintain the safety of both crew and vessel.</p>
+                            <a href="/captain/registration/sign_in_captain.html" class="become-btn">Become a
+                                captain</a>
+                        </div>
+                        <div class="illustration_captain">
+                            <img src="/img/captain.jpg" alt="Illustration of a ship's captain" height="500px"
+                                style="width: 100%;">
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Features for Captains</h2>
+                    <ul class="feature-list">
+                        <li>
+                            <div class="icon">
+                                <img src="/img/Location.png" alt="Location icon">
+                            </div>
+                            <div class="feature-info">
+                                <h3>Real-time localization</h3>
+                                <p>Captains can monitor the exact position of their vessel in real time,
+                                    thanks to
+                                    precise positioning system.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <img src="/img/meteo.png" alt="Icône de météo">
+                            </div>
+                            <div class="feature-info">
+                                <h3>Meteorological data</h3>
+                                <p>Captains can obtain accurate weather information for their current location and
+                                    their current location and destination, so they can make informed weather
+                                    navigation
+                                    decisions.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <img src="/img/alerte.png" alt="Icône d'alerte">
+                            </div>
+                            <div class="feature-info">
+                                <h3>Real-time alerts</h3>
+                                <p>Captains receive real-time alerts in the event of danger or emergency,
+                                    to enable
+                                    enable them to react quickly and effectively.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <!--For Port agents-->
+                <section id="port_agents">
+                    <h2>The Navigo Pro port agents</h2>
+                    <div class="container">
+                        <div class="illustration_agent">
+                            <img src="/img/Ports_agent.jpg" alt="Illustration of a port agent" height="500px"
+                                style="width: 100%;">
+                        </div>
+
+                        <div class="content_agent">
+                            <p>Port agents in Navigo Pro have the same function as conventional agents, but with
+                                their their job is to register all boats entering and leaving a given port via a
+                                a form. </p>
+                            <p> form is linked to a port already registered on the site, enabling more
+                                efficient
+                                efficient management of information.</p>
+
+                            <a href="/agent/registration/sign_in_agent.html" class="become-btn">Become an agent</a>
+                        </div>
+                    </div>
+
+                    <h2>Features for port agent</h2>
+                    <ul>
+                        <li>Recording of incoming and outgoing boat information</li>
+                        <li>Coordination with other port agents to facilitate port operations</li>
+                        <li>Communication with port authorities to ensure compliance with rules and
+                            regulations</li>
+                    </ul>
+                </section>
+        </section>
+
+
+        </div>
+    </main>
+    <footer>
+        <p>© 2023 Navigo Pro. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/agent/port_manage/style.css" media="screen" type="text/css" />
+    <link rel="shortcut icon" type="image/png" href="/img/Flaticon.png" />
+    <title>Pleasure boat</title>
+</head>
+
+<body id="BODY">
+    <div id="container">
+        <!-- registration area -->
+
+        <form action="./fishing_boat.php" method="POST">
+            <h1>Cargot boat</h1>
+
+            <label for="name">Nom :</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="immatriculation">Immatriculation :</label><br>
+            <input type="text" id="immatriculation" name="immatriculation" required><br>
+
+            <label for="captain">Capitaine :</label><br>
+            <input type="text" id="captain" name="captain" required><br>
+
+            <label for="crew">Nombre d'équipage :</label><br>
+            <input type="number" id="crew" name="crew" required><br>
+
+            <label for="nature">Nature :</label><br>
+            <input type="text" id="nature" name="nature" required><br>
+
+            <label for="weight">Poids :</label><br>
+            <input type="number" id="weight" name="weight" step="0.01" required><br>
+
+            <label for="departure_port">Port de départ :</label><br>
+            <input type="text" id="departure_port" name="departure_port" required><br>
+
+            <label for="destination_port">Port de destination :</label><br>
+            <input type="text" id="destination_port" name="destination_port" required><br>
+
+            <label for="departure_date">Date de départ :</label><br>
+            <input type="date" id="departure_date" name="departure_date" required><br>
+
+            <label for="departure_time">Heure de départ :</label><br>
+            <input type="time" id="departure_time" name="departure_time" required><br>
+
+            <label for="arrival_date">Date d'arrivée :</label><br>
+            <input type="date" id="arrival_date" name="arrival_date" required><br>
+
+            <label for="arrival_time">Heure d'arrivée :</label><br>
+            <input type="time" id="arrival_time" name="arrival_time" required><br>
+
+            <input type="submit" id='submit' value='SUBMIT'>
+            <a href="/agent/port_manage/home.php" id="link">Back</a>
+        </form>
+    </div>
+</body>
+
+</html>

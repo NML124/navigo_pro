@@ -1,0 +1,274 @@
+/* Reset des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f2f2f2;
+}
+
+header {
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+header h1 {
+    margin-right: auto;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav li:first-child {
+    margin-left: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #6C62CE;
+}
+
+#contain {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/hom_bg2.jpg);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-size: 100% auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    margin: 20px;
+}
+
+.cta {
+    display: inline-block;
+    background-image: linear-gradient(to bottom right, #6C62CE, #FC02FE, #FF610E);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-image 0.3s;
+}
+
+.cta:hover {
+    background-image: linear-gradient(to bottom right, #FF610E, #FC02FE, #6C62CE);
+    color: #fff;
+}
+
+.services {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.services h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.services ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services li {
+    flex-basis: calc(33.33% - 20px);
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.services img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.services h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.services p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/*For operator*/
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    animation: apparition 0.8 ease-out;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.illustration_operator {
+    flex: 1;
+    border-radius: 20px;
+    margin-right: 50px;
+}
+
+.content_operator {
+    flex: 1;
+    text-align: justify;
+}
+
+.become-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-image: linear-gradient(to bottom right, #6C62CE, #FC02FE, #FF610E);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.become-operator-btn:hover {
+    background-image: linear-gradient(to bottom right, #FF610E, #FC02FE, #6C62CE);
+    color: #fff;
+}
+
+/*For captain*/
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.illustration_captain {
+    flex: 1;
+}
+
+.content_captain {
+    flex: 1;
+    margin-right: 50px;
+    text-align: justify;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-list li {
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.feature-list li .icon {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.feature-list li h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.feature-list li p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/*For Port agents*/
+.illustration_agent {
+    flex: 1;
+    border-radius: 20px;
+    margin-right: 50px;
+}
+
+.content_agent {
+    flex: 1;
+    text-align: justify;
+}
+
+
+footer {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-top: 60px;
+}

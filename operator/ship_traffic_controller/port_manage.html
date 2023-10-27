@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./port_manage.css">
+    <link rel="shortcut icon" type="image/png" href="/img/Flaticon.png" />
+    <script src="./port_manage.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <title>Port information</title>
+</head>
+
+<body>
+    <header>
+        <h1 href="/home.html"><img src="/img/Navigo_pro_black.png" alt="Navigo Pro" width="300"></h1>
+        <button class="back-button" onclick="history.go(-1);"></button>
+    </header>
+
+    <main>
+
+        <h2>📋Port information </h2>
+        <h2><i class="fas fa-user-circle"></i>Profil</h2>
+        <p id="name"></p><br>
+        <p id="first_name"></p><br>
+        <p id="port"></p><br>
+        <p id="address"></p><br>
+        <h2><i class="fas fa-cloud-sun"></i> Metéo data</h2>
+        <p id="city"></p><br>
+        <p id="temp"></p><br>
+        <p id="humidity"></p><br>
+        <p id="wind"></p><br>
+
+        <h2>Fishing boat</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Immatriculation</th>
+                    <th>Captain</th>
+                    <th>Crew</th>
+                    <th>Quantity</th>
+                    <th>Type</th>
+                    <th>Location</th>
+                    <th>Duration</th>
+                    <th>Departure date</th>
+                    <th>Arrival date</th>
+                    <th>Agent</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <h2>Cargot boat</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Immatriculation</th>
+                    <th>Captain</th>
+                    <th>Crew</th>
+                    <th>Nature</th>
+                    <th>Weight</th>
+                    <th>Departure date</th>
+                    <th>Arrival date</th>
+                    <th>Agent</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <h2>Pleasure boat</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Immatriculation</th>
+                    <th>Owner</th>
+                    <th>Passenger numbers</th>
+                    <th>Duration</th>
+                    <th>Motif</th>
+                    <th>Agent</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>© 2023 Navigo Pro. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

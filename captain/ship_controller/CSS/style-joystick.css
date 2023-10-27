@@ -1,0 +1,131 @@
+
+
+.TheJoysticks{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#joy{
+  display: flex;
+  width: 128px;
+  /* border: 1px solid red; */
+  position: relative;
+  margin: 0px 20px;
+}
+.stick{
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  left: 32px;
+  top: 32px;
+}
+.display-joy{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.display-joy p{
+  width: 60px;
+  padding: 3px;
+  border: 1px solid #555;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+.angle-joy{
+  display: flex;
+  margin-left: 5px;
+}
+
+
+.bouton {
+  box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
+  background-color: #5068ab; /* Couleur de fond */
+  border: none; /* Pas de bordure */
+  color: white; /* Couleur du texte */
+  /* padding: 5px 20px; /* Espacement interne */
+  text-align: center; /* Alignement horizontal */
+  text-decoration: none; /* Pas de soulignement */
+  /*display: inline-block; /* Affichage en ligne */
+  font-size: 16px; /* Taille de police de caractères */
+  margin: 4px 15px; /* Marge extérieure */
+  cursor: pointer; /* Curseur de souris */
+  border-radius: 10px; /* Arrondi des coins */
+  transition-duration: 0.4s; /* Durée de l'animation */
+  width: 100px;
+  height: 50px;
+}
+
+.bouton:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+/***************** BOUTON SWITCH ******************/
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider-round {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e73844;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider-round:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider-round {
+  background-color: #2196F3;
+}
+
+input:focus + .slider-round {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider-round:before {
+  transform: translateX(26px);
+}
+
+/* Style pour un switch plus petit */
+.switch.small {
+  width: 40px;
+  height: 20px;
+}
+
+.switch.small .slider-round {
+  border-radius: 20px;
+}
+
+.switch.small .slider-round:before {
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+}

@@ -1,0 +1,51 @@
+#BODY {
+    background-image: url(/img/Bg_black.png);
+    background-position: center;
+}
+
+#map {
+    width: 90%;
+    height: 550px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.2), 0 5px 5px 0 rgba(255, 255, 255, 0.24);
+    margin: 0 auto;
+}
+
+header {
+    padding: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+h2 {
+    color: black;
+    margin-left: 30px;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+p {
+    color: black;
+    margin: 30px;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+#left-section {
+    width: 25%;
+    height: 550px;
+    float: left;
+    border: 1px solid #f1f1f1;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.2), 0 5px 5px 0 rgba(255, 255, 255, 0.24);
+}

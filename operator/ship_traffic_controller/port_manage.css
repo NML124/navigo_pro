@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f2f2f2;
+}
+
+main {
+    margin: 15px;
+    margin-top: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+header button {
+    margin-right: 30px;
+}
+
+.back-button {
+    background-color: #4c4c4c;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom right, #6C62CE, #FC02FE, #FF610E);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.back-button:hover {
+    background-image: linear-gradient(to bottom right, #FF610E, #FC02FE, #6C62CE);
+}
+
+.back-button::before {
+    content: "\2190";
+    margin-right: 10px;
+    color: #ffffff;
+    /* couleur de la flèche */
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.back-button {
+    background-color: #ddd;
+    color: #222;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #ccc;
+}
+
+h2 {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #eee;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+p {
+    margin: 0.5px;
+}
+
+.fa-user-circle {
+    color: #4a004a;
+    font-size: 30px;
+    padding-right: 20px;
+}
+
+.fa-cloud-sun {
+    color: #4a004a;
+    font-size: 30px;
+    padding-right: 20px;
+}
+
+.fa-thermometer-half {
+    font-size: 15px;
+    padding-right: 20px;
+}
+
+.fa-tint {
+    font-size: 15px;
+    padding-right: 20px;
+}
+
+.fa-wind {
+    font-size: 15px;
+    padding-right: 20px;
+}
+
+footer {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-top: 60px;
+}

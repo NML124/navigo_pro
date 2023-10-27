@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- import style file -->
+    <link rel="stylesheet" href="/style.css" media="screen" type="text/css" />
+    <link rel="shortcut icon" type="image/png" href="/img/Flaticon.png" />
+    <title>Sign Up</title>
+</head>
+
+<body id="BODY">
+    <div id="container">
+        <!-- registration area -->
+
+        <form action="registration_for_operator.php" method="POST">
+            <h1>Sign up</h1>
+
+            <label><b>Name</b></label>
+            <input type="text" placeholder="Enter your name" name="name" required>
+
+            <label><b>First name</b></label>
+            <input type="text" placeholder="Enter your First name" name="first_name" required>
+
+            <label><b>User name</b></label>
+            <input type="text" placeholder="Enter the user name" name="user_name" required>
+
+            <label><b>Port</b></label>
+            <input type="text" placeholder="Enter the name of the port" name="port" required>
+
+            <label><b>Port adress</b></label>
+            <input type="text" placeholder="Enter the full port address " name="port_address" required>
+
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter the password" name="password" required>
+
+            <input type="submit" id='submit' value='SUBMIT'>
+            <a href="/authentification/login.php" id="link">login</a>
+        </form>
+    </div>
+</body>
+
+</html>

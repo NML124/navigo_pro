@@ -1,0 +1,170 @@
+#BODY {
+    background-image: url(img/Logo.png);
+}
+
+
+#container {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+/* Bordered form */
+form {
+    width: 100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#container h1 {
+    font-family: Arial, Verdana, sans-serif;
+    text-align: center;
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+p {
+    font-family: Arial, Verdana, sans-serif;
+    text-align: center;
+}
+
+#btn {
+    font-family: Arial, Verdana, sans-serif;
+    background-color: #4169E1;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#boat_type {
+    font-family: Arial, Verdana, sans-serif;
+    background-color: white;
+    color: black;
+    width: 100%;
+    padding: 1px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+}
+
+#user_type {
+    font-family: Arial, Verdana, sans-serif;
+    background-color: white;
+    color: black;
+    width: 100%;
+    padding: 1px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+}
+
+#link {
+    font-family: Arial, Verdana, sans-serif;
+    text-align: center;
+}
+
+/* Full-width inputs */
+input[type=text],
+input[type=password] {
+    font-family: Arial, Verdana, sans-serif;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type=int],
+input[type=password] {
+    font-family: Arial, Verdana, sans-serif;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+input[type=submit] {
+    font-family: Arial, Verdana, sans-serif;
+    background-color: #4169E1;
+    color: white;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type=date] {
+    font-family: Arial, Verdana, sans-serif;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type=email] {
+    font-family: Arial, Verdana, sans-serif;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type=radio] {
+    font-family: Arial, Verdana, sans-serif;
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+
+input[type=submit]:hover {
+    font-family: Arial, Verdana, sans-serif;
+    background-color: white;
+    color: #4169E1;
+    border: 1px solid #4169E1;
+    border-radius: 10px;
+}
+
+select {
+    width: 200px;
+    height: 40px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+}
+
+option {
+    background-color: #f9f9f9;
+    color: black;
+}
+
+label {
+    font-family: Arial, Verdana, sans-serif;
+    color: black;
+    margin: 8px;
+}

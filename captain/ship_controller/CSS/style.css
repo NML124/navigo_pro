@@ -1,0 +1,262 @@
+body {
+  background-image: url(/captain/ship_controller/assets/Images/Logo.png);
+  background-size: contain;
+  background-position: center;
+
+}
+
+.control {
+  /*background-image:url(/assets/Images/Logo.png);*/
+  background-size: cover;
+  /* box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8); */
+  width: 100%;
+  background-position: unset;
+}
+
+/*************** SENSORS PART ***************/
+
+.image-top {
+  box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
+  background-color: #fff;
+  border-radius: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 80%;
+  padding: 10px 0px;
+}
+
+.image-top img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+.controlForm {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
+  /* Pour elever un truc*/
+  height: 250px;
+  width: 300px;
+  margin: 20px;
+  transition: 0.5s;
+}
+
+.controlForm:hover {
+  transition: 0.5s;
+  transform: scale(1.05);
+}
+
+.sensor-name {
+  display: grid;
+  background-color: #2b4078;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.info-angle {
+  /* Pour aligner une donnée dans un angle*/
+  display: flex;
+  align-items: center;
+}
+
+.sensor-name h3 {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.sensor-image img {
+  width: 120px;
+  height: 120px;
+  justify-content: center;
+}
+
+.contenu-sensor {
+  display: flex;
+  align-items: center;
+}
+
+.location {
+  margin-top: 20px;
+}
+
+.info-sensor .angle-data p {
+  width: 60px;
+  padding: 3px;
+  border: 1px solid #555;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.info-sensor {
+  align-items: center;
+  justify-content: center;
+}
+
+.all-sensors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+/*************** PANEL CONTROL PART ***************/
+
+.Panel-control {
+  box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
+  background-color: #fff;
+  border-radius: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  height: 900px;
+  width: 70%;
+}
+
+.Panel-control h2 {
+  color: #fff;
+  background-color: #2b4078;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+.mode-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mode-control h3 {
+  box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
+  background-color: #2b4078;
+  color: #fff;
+  padding: 10px 0px;
+  width: 200px;
+  text-align: center;
+  border-radius: 25px;
+  transition: 0.5s;
+}
+
+.mode-control h3:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+#control {
+  padding: 0px 20px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 70%;
+  height: 15px;
+  border-radius: 5px;
+  background: #ddd;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: red;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  transition: 0.5s;
+  transform: scale(1.2);
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.Range-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.title-control {
+  display: flex;
+  align-items: center;
+  columns: 10px;
+}
+
+.title-control p {
+  width: 60px;
+  padding: 3px;
+  border: 1px solid #555;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+
+
+/*************** BUTTONS CONTROL ***************/
+
+
+.ForLine {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background-color: #fff;
+  box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  margin: 5px;
+  outline: none;
+  padding: 0;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.btn img {
+  align-items: center;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+
+.btn:active {
+  background-color: #005cbf;
+}
